@@ -8,7 +8,6 @@ En effet, les outputs s’affichent systématiquement à la fin de chaque exécu
 
 En vous appuyant sur la [documentation officielle de terraform](https://developer.hashicorp.com/terraform/language/values/outputs), déclarez les outputs suivants dans un fichier nommé outputs.tf :
 
-- Le nom du VPC dans lequel se trouve votre infrastructure
 - Le nom de votre load-balancer
 - Le nom DNS de votre load-balancer
 - Le nom du security group de votre load balancer
@@ -21,7 +20,7 @@ En vous appuyant sur la [documentation officielle de terraform](https://develope
 - Le port utilisé par votre base de données
 - Le nom du security group de votre base de données
 
-Les valeurs de vos outputs devront être renseignées via les outputs de vos ressources correspondantes (cf. [aws_lb](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/lb), [aws_instance](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/instance) et [aws_db_instance](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/db_instance)).
+Les valeurs de vos outputs devront être renseignées via les variables locales ou les outputs de vos ressources correspondantes (cf. [aws_lb](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/lb), [aws_instance](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/instance) et [aws_db_instance](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/db_instance)).
 
 ## Exécution du code terraform
 
